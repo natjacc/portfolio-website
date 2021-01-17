@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="93px" viewBox="0 0 211 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle2@1x</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle2" stroke="#80BEB9" stroke-width="3" fill="#FFFFFF" x="1.5" y="1.5" width="208" height="90" rx="8"></rect>
+        <text id="NATALIE" stroke="#000000" font-family="PTSans-Bold, PT Sans" font-size="48" font-weight="bold" fill="#000000">
+            <tspan x="19" y="43">NATALIE</tspan>
+        </text>
+        <text id="JACAMAN" stroke="#000000" font-family="PTSans-Regular, PT Sans" font-size="48" font-weight="normal" fill="#000000">
+            <tspan x="10" y="82">JACAMAN</tspan>
+        </text>
+    </g>
+</svg>
