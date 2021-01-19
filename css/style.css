@@ -41,7 +41,7 @@ a {
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #80BEB9;
+  color: #31444C;
 }
 a:hover {
   color: #31444C;
@@ -69,4 +69,14 @@ a:focus {
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #80BEB9;
+  text-transform: uppercase;
+  border: 2px solid #80BEB9;
+}
+.button.contact:hover {
+  background-color: #80BEB9;
+  color: #ffffff;
 }
