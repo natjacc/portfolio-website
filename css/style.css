@@ -80,3 +80,16 @@ a:focus {
   background-color: #80BEB9;
   color: #ffffff;
 }
+
+.heromessage {
+  font-family: 'PT Sans';
+  color: #80BEB9;
+}
+.workfont {
+  font-family: 'PT Sans';
+  color: #80BEB9;
+}
+.contactfont {
+  font-family: 'PT Sans';
+  color: #80BEB9;
+}
