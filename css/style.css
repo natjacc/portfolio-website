@@ -3,53 +3,68 @@ Colors used:
 Primary Color (Black): #000000;
 Secondary Color (Teal): #80BEB9;
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #E6E0E0;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6
-  color: #000000;
+  line-height: 1.6 color: #000000;
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
-  font-weight:700;
+  font-weight: 700;
 }
+
 h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
 
 a {
   color: #5B5B5B;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #31444C;
 }
+
 a:hover {
   color: #31444C;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #0F1396;
 }
+
 a:hover,
 a:focus {
   color: #31444C;
@@ -57,25 +72,32 @@ a:focus {
 }
 
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #80BEB9;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #31444C; /* width of the border, type, color */
+  border-bottom: 2px solid #31444C;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #80BEB9;
   text-transform: uppercase;
   border: 2px solid #80BEB9;
 }
+
 .button.contact:hover {
   background-color: #80BEB9;
   color: #ffffff;
@@ -83,13 +105,134 @@ a:focus {
 
 .heromessage {
   font-family: 'PT Sans';
-  color: #80BEB9;
+  color: #000000;
 }
+
 .workfont {
   font-family: 'PT Sans';
   color: #80BEB9;
 }
+
 .contactfont {
   font-family: 'PT Sans';
   color: #80BEB9;
+}
+
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /*25px top and bottom, 0 left and right */
+}
+
+#inktank .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#languagegoals .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#language-goals h1 {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  text-align: center;
+  display: inline-block;
+}
+
+.insta {
+  max-width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.pp {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #000000;
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #80BEB9;
+}
+
+nav>ul>li>a:visited {
+  color: #31444C;
+}
+
+nav>ul>li>a:hover, a:focus {
+  color: #31444C;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  color: #0F1396;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+#hero-header {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(128, 190, 185, 1) 75%, rgba(128, 190, 185, 1) 100%);
+}
+
+#contact {
+  text-align: center;
+}
+
+#about-header h1 {
+  text-align: center;
+}
+
+#my-story h2 {
+  text-align: center;
+}
+
+.resume-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
