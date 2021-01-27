@@ -8,7 +8,7 @@ Secondary Color (Teal): #80BEB9;
 }
 
 body {
-  background-color: #E6E0E0;
+  background-color: #EAF3F2;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -144,9 +144,13 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
   display: inline-block;
+  height: auto;
+  width: auto;
+  max-height: 70px;
+
 }
 
 .insta {
@@ -155,13 +159,7 @@ a:focus {
   text-align: center;
 }
 
-.pp {
-  max-width: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 header {
   background-color: #ffffff;
@@ -230,9 +228,91 @@ nav {
   text-align: center;
 }
 
+#skills-tools h2 {
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+
 .resume-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 12px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#my-story h2 {
+  text-align: left;
+}
+.resume-button {
+  text-align: left;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+[class*"col-lg-"] {
+  float: left;
+  padding: 20px;
+}
+
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
