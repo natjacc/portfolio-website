@@ -224,14 +224,6 @@ nav {
   text-align: center;
 }
 
-#my-story h2 {
-  text-align: center;
-}
-
-#skills-tools h2 {
-  text-align: center;
-}
-
 #work h2 {
   text-align: center;
 }
@@ -260,6 +252,9 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
   }
+  .col-md-12 {
+    width: 100%;
+  }
   [class*="col-"] {
     float: left;
     padding: 10px;
@@ -272,6 +267,12 @@ Medium devices (640px and larger)
 .container {
   max-width: 640px;
   margin: 0 auto;
+}
+#my-story h2 {
+  text-align: center;
+}
+#skills-tools h2 {
+  text-align: center;
 }
 
 }
@@ -286,30 +287,41 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
-  .col-md-6 {
+  .col-lg-6 {
     width: 50%;
   }
+  .col-lg-12 {
+    width: 100%;
+  }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-
-#my-story h2 {
-  text-align: left;
+  .container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .resume-button {
   text-align: left;
 }
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
+#my-story h2 {
+  text-align: left;
 }
-[class*"col-lg-"] {
+#skills-tools h2 {
+  text-align: unset;
+}
+[class*="col-"] {
   float: left;
-  padding: 20px;
+  padding: 10px;
 }
-
+#programs h3 {
+  margin-top: 0;
+}
+#ux-skills h3 {
+  margin-top: 0;
+}
 }
 
 /* ==============================
