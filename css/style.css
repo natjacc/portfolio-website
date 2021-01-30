@@ -319,6 +319,14 @@ Medium devices (640px and larger)
   #skills-tools h2 {
     text-align: center;
   }
+
+  #programs h3 {
+    margin-top: 0;
+  }
+
+  #ux-skills h3 {
+    margin-top: 0;
+  }
 }
 
 /* ==============================
