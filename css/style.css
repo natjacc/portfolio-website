@@ -83,7 +83,7 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #31444C;
   /* width of the border, type, color */
-  transition-duration: 0.5s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -119,7 +119,6 @@ a:focus {
 }
 
 /* layout styling */
-
 .container {
   padding: 0 15px;
 }
@@ -150,7 +149,6 @@ a:focus {
   height: auto;
   width: auto;
   max-height: 70px;
-
 }
 
 .insta {
@@ -158,8 +156,6 @@ a:focus {
   display: inline-block;
   text-align: center;
 }
-
-
 
 header {
   background-color: #ffffff;
@@ -228,7 +224,6 @@ nav {
   text-align: center;
 }
 
-
 .resume-button {
   display: block;
   margin-left: auto;
@@ -237,16 +232,27 @@ nav {
 }
 
 @keyframes color-change {
- from {fill: #edc655;}
- to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
-.sun {animation: 4s color-change infinite alternate linear;
+.sun {
+  animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -254,8 +260,13 @@ nav {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
@@ -270,37 +281,44 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 12px;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-12 {
     width: 100%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
-.container {
-  max-width: 640px;
-  margin: 0 auto;
-}
-#my-story h2 {
-  text-align: center;
-}
-#skills-tools h2 {
-  text-align: center;
-}
 
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  #my-story h2 {
+    text-align: center;
+  }
+
+  #skills-tools h2 {
+    text-align: center;
+  }
 }
 
 /* ==============================
@@ -310,12 +328,15 @@ Large devices (1024px or larger)
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .col-lg-12 {
     width: 100%;
   }
@@ -325,29 +346,40 @@ Large devices (1024px or larger)
     clear: both;
     display: table;
   }
+
   .container {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-.resume-button {
-  text-align: left;
-}
-#my-story h2 {
-  text-align: left;
-}
-#skills-tools h2 {
-  text-align: unset;
-}
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-#programs h3 {
-  margin-top: 0;
-}
-#ux-skills h3 {
-  margin-top: 0;
-}
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .resume-button {
+    text-align: left;
+  }
+
+  #my-story h2 {
+    text-align: left;
+  }
+
+  #skills-tools h2 {
+    text-align: unset;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  #programs h3 {
+    margin-top: 0;
+  }
+
+  #ux-skills h3 {
+    margin-top: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
 }
 
 /* ==============================
