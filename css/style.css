@@ -32,6 +32,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  margin-top: 0;
 }
 
 h4 {
@@ -356,7 +357,7 @@ Large devices (1024px or larger)
   }
 
   .container {
-    max-width: 1920px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
