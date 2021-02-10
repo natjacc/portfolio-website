@@ -174,7 +174,6 @@ nav>ul {
   margin: 0;
 }
 
-
 nav>ul>li>a {
   padding: 0 5px;
   text-transform: uppercase;
@@ -194,8 +193,6 @@ nav>ul>li>a:hover, a:focus {
 nav>ul>li>a:active {
   color: #0F1396;
 }
-
-
 
 #hero-header {
   padding: 20px 20;
@@ -283,8 +280,26 @@ nav>ul>li>a:active {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
+}
+
+nav>ul {
+  margin: 1em 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* ==============================
@@ -300,25 +315,16 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
-nav > ul {
-  margin: 1em 0;
-}
+  .navtoggle.responsive li {
+    border-top: 0;
+  }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
-
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
+  .navtoggle.responsive nav {
+    padding: 0 0 0;
+  }
 
   header {
     text-align: unset;
