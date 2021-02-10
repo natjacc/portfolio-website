@@ -160,8 +160,7 @@ a:focus {
 
 header {
   background-color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   border-bottom: 1px solid #000000;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
   position: relative;
@@ -172,11 +171,9 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 5px;
@@ -198,11 +195,7 @@ nav>ul>li>a:active {
   color: #0F1396;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-  position: relative;
-}
+
 
 #hero-header {
   padding: 20px 20;
@@ -274,10 +267,59 @@ nav {
   animation: 50s cloud-move-reverse infinite alternate linear;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
